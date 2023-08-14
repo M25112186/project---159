@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="​​https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="/js/highlight.js"></script>
+        <script src="/js/Poster.js"></script>
+        <script src="/js/infoBanner.js"></script>
+
+    </head>
+    <body>
+        <a-scene bakckground="color:#90caf9">
+        <a-plane
+        id="ground" 
+        color="#78909c"  
+        width="200"
+        height="100"
+        rotation="-90 0 0"></a-plane> 
+    <a-entity id="posters-container" comics-posters></a-entity>
+    <a-camera id="camera" wasd-controls="enabled:false;" postion="0 10 20"></a-camera>  
+    <a-entity 
+    id="app-title"
+    position="0 0.73 -1" 
+    text="font: exo2bold; align:center; width:2; color: #000; value: Get your favourite Comics!"></a-entity>
+    
+    <a-entity 
+    id="fadeBackground"
+    geometry="primitive: sphere; radius: 2.5"
+    material="color:black; sode:nack; shader: flat; transparent: true; opacity: 0.6"
+    visible="false"
+    cursor-listener></a-entity>
+<a-entity 
+id="camera-cursor"
+cursor
+position="0 0 -3"
+geometry="primitve: ring; radiusInner: 0.08; radiusOuter: 0.12"
+material="color: orange; shader: flat"></a-entity>
+</a-scene bakckground>
+    </body>
+</html>
